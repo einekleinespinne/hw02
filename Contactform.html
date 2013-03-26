@@ -1,22 +1,44 @@
 <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
 <ul>
+
 	<li><label for="ur_id">hiddlen_id</label>
-		<input type="text" name="entry.0.single" value="your_id" id="ur_id">
+		<input type="hidden" name="entry.0.single" value="ididid" id="ur_id">
 	</li>
-	<li><label for="gender">gender</label>
-		<input type="radio" name="entry.1.group" id="gender">
+
+	<li><p>gender
+		<input type="radio" name="entry.1.group" id="gender1" value="Boy">
+		<label for="gender1">Boy</label>
+		<input type="radio" name="entry.1.group" id="gender2" value="Birl">
+		<label for="gender2">Birl</label>
+		</p>
 	</li>
-	<li><label for="favoritefoods">Favorite Foods</label>
-		<input type="checkbox" name="entry.2.group" id=>
+
+	<li><p>Favorite Foods
+		<input type="checkbox" name="entry.2.group" id="favoritefood1"value="Apple">
+		<label for "favoritefood1">Apple
+		<input type="checkbox" name="entry.2.group" id="favoritefood2"value="Banana">
+		<label for "favoritefood2">Banana
+		<input type="checkbox" name="entry.2.group" id="favoritefood3"value="Lemon">
+		<label for "favoritefood3">Lemon
+		<input type="checkbox" name="entry.2.group" id="favoritefood4"value="Watermelon">
+		<label for "favoritefood4">Watermelon
+		</p>
 	</li>
-	<li><label for="relationship">Relationship</label>
-		<input type="text" name="entry.3.single">
+
+	<li><p>Relationship
+		<select>
+ 		<option name="entry.3.single" value="single">single</option>
+ 		<option name="entry.3.single" value="dating">dating</option>
+ 		<option name="entry.3.single" value="married">married</option>
+		<option name="entry.3.single" value="hard to explain">hard to explain</option>
+		</select>
+		</p>
 	</li>
 	<li><label for="email">Email</label>
 		<input type="text" name="entry.4.single">
 	</li>
 	<li><label for="commemts">Comments</label>
-		<input type="text" name="entry.5.single" value="your_id">
+		<textarea name="entry.5.single" cols="30"  rows="5"></textarea>
 	</li>
     <input type="submit" value="submit" name="submit" > 
 </ul>
