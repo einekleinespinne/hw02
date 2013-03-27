@@ -5,12 +5,19 @@
 	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
 	<link href='code/css/960.css'rel='stylesheet'type='text/css'>
 	<link href='code/css/reset.css'rel='stylesheet'type='text/css'>
 	<link href='code/css/text.css'rel='stylesheet'type='text/css'>
 
 
 	<style type="text/css">
+	
+	
+	a:link {color:purple;}    
+	a:visited {color:blue;} 
+	a:hover {color:lightblue;}   
+	a:active {color:green;}  
 	body{
 		background:url(lightbackground.jpg);
 		}
@@ -24,13 +31,26 @@
  		margin: 5px;
     	border: 20px solid yellow;
     	display: block;
-   		background: grey;
+   		background: #cedce7; /* Old browsers */
+   		background: -moz-linear-gradient(top,  #cedce7 0%, #596a72 83%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(83%,#596a72)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #cedce7 0%,#596a72 83%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #cedce7 0%,#596a72 83%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #cedce7 0%,#596a72 83%); /* IE10+ */
+		background: linear-gradient(to bottom,  #cedce7 0%,#596a72 83%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 50px;
+		cursor:not-allowed;
  	}
+
 	#words{
 	    font-family: 'Clicker Script', cursive;
 	    font-size:48px;
 	    font-style: italic;
  		color:brown;
+ 		cursor: wait;
  	}
  	#citation{
  		font-family: 'Clicker Script', cursive;
@@ -38,12 +58,41 @@
 	    font-style: italic;
  		color:brown;
  	}
+
  	.subtitle{
  		font-style:italic;
  	}
  	article{
  		font-family: 'Patrick Hand SC',cursive;
  		font-size:24px;
+ 	}
+ 	#contact{
+ 		position: absolute;
+		right: 5px; top: 700px;
+		width: 300px;
+ 		font-family: 'Orbitron', sans-serif;
+ 		font-size: 16px;
+ 		margin: 5px;
+    	border: 10px solid red;
+    	display: block;
+    	color:lightyellow;
+    	background: #f0b7a1; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f0b7a1 0%, #752201 24%, #8c3310 79%, #bf6e4e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b7a1), color-stop(24%,#752201), color-stop(79%,#8c3310), color-stop(100%,#bf6e4e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f0b7a1 0%,#752201 24%,#8c3310 79%,#bf6e4e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f0b7a1 0%,#752201 24%,#8c3310 79%,#bf6e4e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f0b7a1 0%,#752201 24%,#8c3310 79%,#bf6e4e 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f0b7a1 0%,#752201 24%,#8c3310 79%,#bf6e4e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+ 	}
+ 	#copyright{
+ 		position: absolute;
+		right: 5px; top: 830px;
+		width: 300px;
+		font-family: 'Special Elite', cursive;
  	}
 	</style>
 
@@ -59,18 +108,18 @@
 
   <header>
     <h1 id="title" class="middle" class="grid_12">EINE KLEINE SPINNE</h1>
-    <nav>
-    <ul>
-    	<li>Name:Spinne</li>
-        <li>Age:20+</li>
-      	<li>Gender:Male</li>
-    </nav>
   </header>
   <section class="grid_12">
   	<blockquote class="middle">
-  	<span id= "words">"Curiouser and curiouser"<span>
+  	<span id= "words"><strong>"Curiouser and curiouser!"</strong><span>
   	<span id="citation">--&lt;Alice's Adventures in Wonderland&gt;,Lewis Carroll</span>
 	</blockquote>
+	<article>
+	<ul class="grid_12">
+    	<li class="grid_4 omega"><span class="subtitle">Name:&nbsp</span>Spinne</li>
+        <li class="grid_4 omega"><span class="subtitle">Age:&nbsp</span>20+</li>
+      	<li class="grid_4 omega"><span class="subtitle">Gender:&nbsp</span>Male</li>
+  	</article><br>
   	<article class="grid_8 alpha">
   	<span class="subtitle">
 	Education:
@@ -114,13 +163,13 @@
 	</article>
 	
   </section>
-  <footer>
-    <p>Contact:<br>
+  <footer class="grid_12">
+    <span id="contact">Contact:<br>
 Cellphone:0900-092-000<br>
 Email:einekleinespinne@gmail.com<br>
-<a href="Contactform.html">Contact form</a>	</p>
+<a href="Contactform.html">Contact form</a></span>
 
-background photo credit: <a href="http://www.flickr.com/photos/guysie/5327472911/">GuySie</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a>
+<span id="copyright">background photo credit:<br> <a href="http://www.flickr.com/photos/guysie/5327472911/">GuySie</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></span>
   </footer>
 
 
