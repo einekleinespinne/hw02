@@ -1,11 +1,44 @@
+<html>
+<head>
+<meta charset="UTF-8" name="einekleinespinne" content="contact form">
+<title>contact form</title>
 <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
+<link href='code/css/960.css'rel='stylesheet'type='text/css'>
+<link href='code/css/reset.css'rel='stylesheet'type='text/css'>
+<link href='code/css/text.css'rel='stylesheet'type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+	a:link {color:purple;}    
+	a:visited {color:blue;} 
+	a:hover {color:lightblue;}   
+	a:active {color:green;}  
+	body{
+		background:url(lightbackground.jpg);
+		font-family: 'Julius Sans One', sans-serif;
+		font-weight: 900;
+		font-size: 20px;
+		}
+	.middle{
+		 font-size:32px; text-align:center; height:150px; line-height:150px;
+	}
+	#title{
+
+	}
+</style>
+</head>
+<body class="container_12">
+<header>
+    <h1 id="title" class="middle" class="grid_12">Contact Form</h1>
+  </header>
+  <section>
 <ul>
 
-	<li><label for="ur_id">hiddlen_id</label>
-		<input type="hidden" name="entry.0.single" value="John Doe" id="ur_id">
+	<li class="grid_4"><label for="ur_id">hiddlen_id</label>
+		<input type="hidden" name="entry.0.single" value="John Doe" id="ur_id" >
 	</li>
 
-	<li><p>gender<br>
+	<li class="grid_4"><p>gender<br>
 		<input type="radio" name="entry.1.group" id="gender1" value="Boy">
 		<label for="gender1">Boy</label><br> 
 		<input type="radio" name="entry.1.group" id="gender2" value="Birl">
@@ -13,7 +46,16 @@
 		</p>
 	</li>
 
-	<li><p>Favorite Foods<br>
+	<li class="grid_4"><p>Relationship<br>
+		<select name="entry.3.single">
+ 		<option value="single">single</option><br>
+ 		<option value="dating">dating</option><br>
+ 		<option value="married">married</option><br>
+		<option value="hard to explain">hard to explain</option><br>
+		</select>
+		</p>
+	</li>
+	<li class="grid_8"><p>Favorite Foods<br>
 		<input type="checkbox" name="entry.2.group" id="favoritefood1"value="Apple">
 		<label for "favoritefood1">Apple<br> 
 		<input type="checkbox" name="entry.2.group" id="favoritefood2"value="Banana">
@@ -25,21 +67,17 @@
 		</p>
 	</li>
 
-	<li><p>Relationship<br>
-		<select name="entry.3.single">
- 		<option value="single">single</option><br>
- 		<option value="dating">dating</option><br>
- 		<option value="married">married</option><br>
-		<option value="hard to explain">hard to explain</option><br>
-		</select>
-		</p>
-	</li>
-	<li><label for "email">E-mail<br>
+	
+	<li class="grid_4"><label for "email">E-mail<br>
 		<input type="email" name="entry.4.single" id="email">
 	</li>
-	<li><label for="commemts">Comments</label><br>
+	<li class="grid_4"><label for="commemts">Comments</label><br>
 		<textarea name="entry.5.single" cols="30"  rows="5" id="commemts"></textarea>
 	</li>
-    <input type="submit" value="submit" name="submit" > 
-</ul>
+   </ul>
+   </section>
+   	<footer class="middle">
+    <input class="grid_4" type="submit" value="submit" name="submit"> 
+	</footer>
 </form>
+</body>
